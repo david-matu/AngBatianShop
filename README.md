@@ -25,18 +25,18 @@ ___
 
 # Showcase of the Project
 
-![Home Page.](/images/Angular_1.png "Home page, currently blank")
+![Home Page.](./images/Angular_1.png "Home page, currently blank")
 ___
 
-![Product List.](/images/Angular_2.png "List of Products")
-
-___
-
-![Adding a Product .](/images/Angular_4.png "Product add UI ")
+![Product List.](./images/Angular_2.png "List of Products")
 
 ___
 
-![Product View.](/images/Angular_5.png "Product View")
+![Adding a Product .](./images/Angular_4.png "Product add UI ")
+
+___
+
+![Product View.](./images/Angular_5.png "Product View")
 
 ___
 ## Last update: 8/22/2022
