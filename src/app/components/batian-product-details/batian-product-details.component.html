@@ -1,0 +1,50 @@
+<ng-template #loading>
+<div class="card shadow pt-5 mt-5">	
+	<div class="card-header">
+		<i class="fa fa-square fa-spin-pulse fa-lg " style="--fa-animation-duration: 2s; color: #00F;"></i> Loading Production information
+	</div>
+	<div class="card-footer bg-light">
+		<button class="btn btn-secondary btn-block" (click)="goBack()">Go Back</button>
+	</div>
+</div>
+</ng-template>
+
+<div *ngIf="myProduct as prod else loading">
+<div class="card shadow pt-5 mt-5">
+	<div class="card-header bg-light text-success">
+		<strong class="text-success h2 font-weight-bolder">{{prod.name}}</strong>
+	</div>
+	
+	<div class="card-body">
+		<div class="row bg-light mb-2">
+			<div class="col-2 col-md-2 font-weight-bolder">ID:</div>
+			<div class="col-10 col-md-10 bg-light">{{prod.productId}}</div>
+		</div>
+		
+		<div class="row bg-light mb-1">
+			<div class="col-md-2 font-weight-bolder">Description:</div>
+			<div class="col-md-10 bg-light">{{prod.description}}</div>
+		</div>
+		
+		<div class="row bg-light mb-1">
+			<div class="col-4 col-md-2 font-weight-bolder">Price:</div>
+			<div class="col-8 col-md-10 bg-light">Ksh {{prod.price | number: '.2-2'}}</div>
+		</div>
+		
+		<div class="row bg-light mb-1">
+			<div class="col-4 col-md-2 font-weight-bolder">Category:</div>
+			<div class="col-8 col-md-10 bg-light">{{prod.categoryId}}</div>
+		</div>
+		
+		<div class="row bg-light mb-1">
+			<div class="col-4 col-md-2 font-weight-bolder">Date of Entry:</div>
+			<div class="col-8 col-md-10 bg-light">{{prod.regDate | date: 'dd MMM yyyy'}}</div>
+		</div>
+		
+	</div>
+	
+	<div class="card-footer bg-light">
+		<button class="btn btn-secondary btn-block" (click)="goBack()">Go Back</button>
+	</div>
+</div>
+</div>

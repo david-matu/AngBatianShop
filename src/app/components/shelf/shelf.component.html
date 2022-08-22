@@ -1,0 +1,19 @@
+<div class="card shadow shadow-lg w-100 ">
+	<div class="card-title d-flex justify-content-between" id="card-header">
+		<strong class="h4 text-white pl-4">Dave ::: Shop View</strong>
+		
+		<div class="btn-group ml-auto">
+			<a href="/batian-products/add" class="btn btn-primary font-weight-bold">+ Add Product</a>
+		</div>
+	</div>
+	<div class="card-body row w-100 px-0 px-md-3 mx-0">
+	
+		<div class="col-md-4 mx-auto" *ngIf="!batianProductList">
+			<strong class='bg-dark text-white'><i class="fas fa-spin"></i> Loading...</strong>
+		</div>
+			
+		<div class="col-md-4" *ngFor="let product of batianProductList">				
+			<batian-product [batianProduct]="product"></batian-product>
+		</div>
+	</div>
+</div>

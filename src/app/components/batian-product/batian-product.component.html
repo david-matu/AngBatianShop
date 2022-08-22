@@ -1,0 +1,22 @@
+<figure class="card card-product">
+	<div class="img-wrap img-rounded border-gradient-green"><img src="https://avatars.githubusercontent.com/u/108116740?s=100&v=4"></div>
+	<a href="/batian-product-details/{{batianProduct.productId}}" class="info-wrap">
+			<h4 class="title">{{batianProduct.name}}</h4>
+			<p class="desc">{{batianProduct.description}}</p>
+			<div class="rating-wrap">
+				<div class="label-rating text-orange">100 reviews</div>
+				<div class="label-rating">2K orders </div>
+			</div> <!-- rating-wrap.// -->
+	</a>
+	<div class="bottom-wrap d-flex">
+		<a href="" class="btn btn-sm btn-primary float-right">Order Now</a>	
+		<div class="price-wrap h5">
+			<span class="price-new text-danger">Ksh {{batianProduct.price}}</span> <del class="price-old">Ksh old</del>
+		</div> <!-- price-wrap.// -->
+	</div> <!-- bottom-wrap.// -->
+	<div class="card-footer bg-dark btn-group font-italic">
+		<span class="btn btn-outline-warning text-white">({{batianProduct.regDate | date: 'dd MMM yyyy'}})</span>
+		<a class="btn btn-primary text-white" href=""><i class="fa fa-list text-white"> <span class="text-white">Update</span></i></a>
+		<a class="btn btn-danger text-white" href=""><i class="fa fa-trash text-white"> <span class="text-white">Delete</span></i></a>
+	</div>
+</figure>

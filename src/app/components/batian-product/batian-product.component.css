@@ -1,0 +1,70 @@
+.card {
+	border: 2px solid green;
+	border-radius: 12px;
+}
+.card-product .img-wrap {
+    border-radius: 3px 3px 0 0;
+    overflow: hidden;
+    position: relative;
+    height: 120px;
+    text-align: center;
+}
+.card-product .img-wrap img {
+    max-height: 100%;
+    max-width: 100%;
+    object-fit: cover;
+}
+.card-product .info-wrap {
+    overflow: hidden;
+    padding: 15px;
+    border-top: 1px solid rgb(0, 0, 255);
+}
+.card-product .bottom-wrap {
+    padding: 15px;
+    border-top: 1px solid #eee;
+}
+
+.label-rating { margin-right:10px;
+    color: #333;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.card-product .price-old {
+    color: #999;
+}
+
+.col-*{
+	border: 3px solid blue;
+	border-radius: 12px;
+}
+
+h4.title {
+	font-weight: bolder;
+}
+
+.text-orange {
+	color: #ff8000;
+}
+
+.text-white {
+	color: #FFF;
+}
+
+.img-rounded img {
+	border-radius: 60%;
+	border: 4px inset red;
+	border-image-source: linear-gradient(to right, #00C853, #B2FF59);
+}
+
+.border-gradient {
+  border: 10px solid;
+  border-image-slice: 1;
+  border-width: 5px;
+}
+.border-gradient-purple {
+  border-image-source: linear-gradient(to left, #743ad5, #d53a9d);
+}
+.border-gradient-green {
+  border-image-source: linear-gradient(to left, #00C853, #B2FF59);
+}

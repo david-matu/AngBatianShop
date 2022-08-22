@@ -1,0 +1,16 @@
+.col-*{
+	border: 3px solid blue;
+	border-radius: 12px;
+}
+
+#card-header {
+	font-weight: bolder;
+	color: #FFF;
+	background: blue;
+}
+
+#card-header a {
+	background: #2F2020;
+	color: #FFF;
+	font-weight: bolder;
+}
